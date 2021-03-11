@@ -28,7 +28,9 @@ public class ThreadVetor extends Thread {
 		}else {
 			double tempoInicial = System.nanoTime();
 			
-			for (int i : vet) {}
+			for (int i : vet) {
+				vet[i] = (int) (Math.random()*101);
+			}
 			
 			double tempoFinal = System.nanoTime();
 			double tempoTotal = (tempoFinal - tempoInicial)/Math.pow(10, 9);
